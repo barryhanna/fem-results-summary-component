@@ -1,15 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledResultsPanel = styled.div`
-  background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
-  width: 100%;
-`;
 
 export default function ResultsPanel() {
   return (
-    <StyledResultsPanel>
-      <h2>Your Results</h2>
-    </StyledResultsPanel>
+    <div className="results__panel">
+      <h2 className="results__panel-header centre">Your Results</h2>
+      <p className="results__score centre">
+        76<span>of 100</span>
+      </p>
+      <p>Great</p>
+      <p className="results__description">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
   );
 }
