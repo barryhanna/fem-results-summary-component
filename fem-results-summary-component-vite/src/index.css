@@ -131,9 +131,16 @@ button {
   background-color: var(--clr-dark-blue);
   color: var(--clr-white);
   font-weight: bold;
-  width: fit-content;
+  width: 100%;
   padding: 1em 1.5em;
+  margin-top: 0.5em;
   border-radius: 128px;
+  border: none;
+}
+
+h1,
+h2 {
+  line-height: 1.1;
 }
 
 .panel__container {
@@ -145,7 +152,6 @@ button {
 }
 
 .panel__container > * {
-  width: 50%;
   padding: 2rem;
 }
 
@@ -217,24 +223,48 @@ button {
   --color: #333;
   --bg-color: #fff;
   display: grid;
-  grid-template-columns: 30px 80px 100px;
+  grid-template-columns: 100px 100px;
   color: var(--color);
-  /* background-color: rgba(--bg-color, 95%); */
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.summary__item__score {
+  color: hsla(0, 0%, 20%, 0.5);
+  margin-left: auto;
+}
+
+.summary__item__icon {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.summary__item__score > span {
+  color: #333;
 }
 
 .summary__item-reaction {
   --color: var(--clr-reaction);
+  --bg-color: hsla(357, 100%, 63%, 0.05);
 }
 .summary__item-memory {
   --color: var(--clr-memory);
+  --bg-color: hsla(41, 100%, 50%, 0.05);
 }
 .summary__item-verbal {
   --color: var(--clr-verbal);
+  --bg-color: hsla(164, 100%, 37%, 0.05);
 }
 .summary__item-visual {
   --color: var(--clr-visual);
+  --bg-color: hsla(243, 81%, 48%, 0.05);
 }
 
 .centre {
   text-align: center;
+}
+
+.flow > * + * {
+  margin-top: 0.15em;
 }

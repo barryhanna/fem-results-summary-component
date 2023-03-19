@@ -3,7 +3,7 @@ import SummaryItem from './SummaryItem';
 
 export default function SummaryPanel() {
   return (
-    <div className="summary__panel">
+    <div className="summary__panel flow">
       <h2>Summary</h2>
       <div className="summary__item-list">
         <SummaryItem category="Reaction" score={80}></SummaryItem>
