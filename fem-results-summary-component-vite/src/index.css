@@ -229,8 +229,8 @@ h2 {
 .summary__item {
   --color: #333;
   --bg-color: #fff;
-  display: grid;
-  grid-template-columns: 100px 100px;
+  display: flex;
+
   color: var(--color);
   background-color: var(--bg-color);
   border-radius: 12px;
