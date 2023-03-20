@@ -6,7 +6,7 @@ export default function SummaryItem({ category, score }) {
   return (
     <div className={`summary__item summary__item-${category.toLowerCase()}`}>
       <div className="summary__item__icon">
-        <img src={iconSrc} />
+        <img src={iconSrc} alt={category} />
         <p className="">{category}</p>
       </div>
       <p className="summary__item__score">
